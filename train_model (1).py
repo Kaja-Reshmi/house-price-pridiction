@@ -12,8 +12,8 @@ data = pd.read_csv('House_Price_Predection.csv')  # Update the dataset filename
 data['location'] = data['location'].astype('category').cat.codes  # Encode categorical variables if needed
 
 # Prepare feature and target variables
-X = data[['num_bedrooms', 'num_bathrooms', 'square_footage', 'location']]  # Adjust features as needed
-y = data['price']  # Target variable for house prices
+X = data[['age', 'sex','chest pain type', 'resting blood pressure','serum cholestoral', 'resting blood pressure','serum cholestoral','fasting blood sugar','resting electrocardiographic results',	'max heart rate',	'exercise induced angina',	'oldpeak','ST segment',	'major vessels',	'thal']]  # Adjust features as needed
+y = data['heart disease']  # Target variable for house prices
 
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
