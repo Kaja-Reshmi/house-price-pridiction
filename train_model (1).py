@@ -28,4 +28,4 @@ print(f"Mean Squared Error: {mean_squared_error(y_test, y_pred)}")
 print(f"R^2 Score: {r2_score(y_test, y_pred)}")
 
 # Save the model
-joblib.dump(model, 'house_price_model.pkl')
+joblib.dump(model, 'heart disease prediction.pkl')
